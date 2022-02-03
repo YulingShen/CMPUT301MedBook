@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/medicine_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Medicine"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/dose_amount_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Dose amount"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/medicine_text"
+        app:layout_constraintTop_toBottomOf="@+id/medicine_text"></TextView>
+
+    <TextView
+        android:id="@+id/dose_type_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Dose type"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toEndOf="@+id/dose_amount_text"
+        app:layout_constraintTop_toTopOf="@+id/dose_amount_text">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/dose_frequency_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Frequency"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/dose_amount_text"
+        app:layout_constraintTop_toBottomOf="@+id/dose_amount_text" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
